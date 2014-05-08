@@ -162,6 +162,7 @@
             $this->airTime = (string)$config->airtime;
             $this->twelveHourAirTime = (string)date("g:i a", strtotime($config->airtime));
             $this->airDay = (string)$config->airday;
+            $this->image = isset($config->image) ? (string)$config->image : "image error";
 		}
 
 
